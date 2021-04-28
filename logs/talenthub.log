@@ -1,0 +1,22 @@
+[2021-04-26T12:10:27.764] [ERROR] talenthub - method=POST path=/user/login status=400 - Unable to login
+[2021-04-26T12:10:52.270] [INFO] talenthub - method=POST path=/user/login status=200 - Login for user  godslayyer@gmail.com
+[2021-04-26T12:11:16.188] [INFO] talenthub - method=GET path=/user/me status=200 - current user profile for godslayyer@gmail.com
+[2021-04-26T12:14:07.772] [INFO] talenthub - method=POST path=/user/logout status=200 - Logout for user  godslayyer@gmail.com
+[2021-04-26T12:14:40.773] [ERROR] talenthub - method=POST path=/user status=400 - User validation failed: email: Path `email` is required.
+[2021-04-26T15:46:15.935] [ERROR] talenthub - method=AUTH path=/ status=401 - Authentication failed
+[2021-04-26T15:47:38.867] [ERROR] talenthub - method=AUTH path=/ status=401 - Authentication failed
+[2021-04-27T10:58:11.462] [INFO] talenthub - method=POST path=/user/login status=200 - Login for godslayyer@gmail.com
+[2021-04-27T10:59:01.656] [INFO] talenthub - method=POST path=/post status=200 - create post for godslayyer@gmail.com
+[2021-04-27T10:59:32.759] [INFO] talenthub - method=GET path=/post/6087a11d70aba41a88609391 status=200 - get post by postid for godslayyer@gmail.com
+[2021-04-27T11:00:00.639] [ERROR] talenthub - method=GET path=/post/6087a11d70aba41a88 status=400 - Cast to ObjectId failed for value "6087a11d70aba41a88" at path "_id" for model "Post" for godslayyer@gmail.com
+[2021-04-27T11:00:46.683] [INFO] talenthub - method=GET path=/user/me status=200 - current user profile for godslayyer@gmail.com
+[2021-04-27T11:03:37.241] [INFO] talenthub - method=POST path=/upload status=200 - File upload for godslayyer@gmail.com
+[2021-04-27T11:05:05.664] [INFO] talenthub - method=GET path=/filesdata/1ecaf9ba60cf6f351d70048f040c7717.jpg status=200 - get file info for godslayyer@gmail.com
+[2021-04-27T11:05:25.845] [INFO] talenthub - method=GET path=/files/1ecaf9ba60cf6f351d70048f040c7717.jpg status=200 - display file for godslayyer@gmail.com
+[2021-04-27T11:10:43.936] [ERROR] talenthub - method=GET path=/files/1ecaf9ba60cf6f351d70048f040c.jpg status=404 - File not found for godslayyer@gmail.com
+[2021-04-27T11:12:41.274] [INFO] talenthub - method=GET path=/user/posts status=200 - get user posts for godslayyer@gmail.com
+[2021-04-27T11:15:57.286] [INFO] talenthub - method=POST path=/like status=200 - post 6087a11d70aba41a88609391 unliked by godslayyer@gmail.com
+[2021-04-27T11:16:14.455] [INFO] talenthub - method=GET path=/user/posts status=200 - get user posts for godslayyer@gmail.com
+[2021-04-27T11:16:48.329] [INFO] talenthub - method=POST path=/like status=200 - post 6087a11d70aba41a88609391 liked by godslayyer@gmail.com
+[2021-04-27T11:16:54.101] [INFO] talenthub - method=GET path=/user/posts status=200 - get user posts for godslayyer@gmail.com
+[2021-04-27T11:17:06.015] [ERROR] talenthub - method=POST path=/like status=400 - Like validation failed: parent_id: Cast to ObjectId failed for value "6087a11d70aba41a886" at path "parent_id" for godslayyer@gmail.com
