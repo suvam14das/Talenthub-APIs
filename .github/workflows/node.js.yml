@@ -48,7 +48,7 @@ jobs:
           sed -i 's\#JWT_SECRET\${{ secrets.JWT_SECRET }}\g' Dockerfile 
       - name: Replacing DB_PATH
         run: 
-          sed -i 's\#DB_PATH\${{ secrets.DB_PATH }}\g' Dockerfile   
+          sed -i 's%#DB_PATH%${{ secrets.DB_PATH }}%g' Dockerfile   
       - name: Replacing SENDGRID_API_KEY
         run: 
           sed -i 's\#SENDGRID_API_KEY\${{ secrets.SENDGRID_API_KEY }}\g' Dockerfile
