@@ -199,7 +199,7 @@ router.post('/user/forgotpassword', async (req, res) => {
     
                 if(err)
                     throw new Error("Could not create password !")
-                newpassword = buf.toString('hex')                
+                const newpassword = buf.toString('hex')                
                 forgotPassword(user.email, user.name, newpassword).then(async ()=>{
                     //console.log("Email sent")  
                     user.password = newpassword
