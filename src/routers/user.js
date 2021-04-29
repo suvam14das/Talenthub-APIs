@@ -145,7 +145,7 @@ router.patch('/user/me',auth, async (req, res) => {
                 })
             }
             else if(update === 'accomplishments'){
-                req.body[update].sort((x,y) => x.date>y.date)
+                req.body[update].sort((x,y) => new Date(x.date)-new Date(y.date))
             }
             req.user[update] = req.body[update]             
         })
