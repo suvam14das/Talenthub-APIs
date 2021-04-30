@@ -89,7 +89,8 @@ router.get('/followees', auth, async (req, res) => {
 // search by search string
 router.get('/search/:searchString', auth, async (req, res) => {
     try{
-        const users = await User.find({$or:[{name:{'$regex': req.params.searchString,$options:'i'}},{email:{'$regex': req.params.searchString,$options:'i'}}]})
+        const findusers = await User.find({$or:[{name:{'$regex': req.params.searchString,$options:'i'}},{email:{'$regex': req.params.searchString,$options:'i'}}]})
+        const users = findusers.filter((user) => String(user._id) !== String(req.user._id))
         const search = [] 
         for(const index in users){        
             const isFollowingUser = await Follow.findOne({follower: req.user._id, followee: users[index]})
