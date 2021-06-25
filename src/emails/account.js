@@ -21,6 +21,7 @@ const sendWelcomeMail = (email, name) => {
 }
 
 const forgotPassword = (email, name, password) => {
+    
     return new Promise((resolve, reject) => {
     sgMail.send({
         to: email, 
